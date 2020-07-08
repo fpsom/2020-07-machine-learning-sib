@@ -65,7 +65,7 @@ This course is intended for master and PhD students, post-docs and staff scienti
 Familiarity with any programming language will be required (familiarity with R will be preferable).
 
 #### Technical
-This course will be streamed, you are thus required to have your own computer with an internet connection. In order to ensure clear communication between Instructors and participants, we will be using collaborative tools, such as [Google Drive](https://www.google.com/drive/), [Dropbox](https://www.dropbox.com/) or [Google Colab](https://colab.research.google.com/notebooks/intro.ipynb).
+This course will be streamed, you are thus required to have your own computer with an internet connection. In order to ensure clear communication between Instructors and participants, we will be using collaborative tools, such as [Google Drive](https://www.google.com/drive/) and/or Google Docs.
 
 _Maximum participants_: 30
 
