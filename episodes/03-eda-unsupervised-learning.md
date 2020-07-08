@@ -10,7 +10,7 @@ The data that we will be using for this workshop are from the following sources:
 - RNA-Seq data from the study of tooth growth in mouse embryos from the [Gene Expression Omnibus ID:GSE76316](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE76316)
 
 We will first load up the UCI dataset. The dataset itself does not contain column names, we've created a second file with only the column names, which we will use.
-We will be using [tidyverse](https://www.tidyverse.org), a collection of R packages for Data Science. 
+We will be using [tidyverse](https://www.tidyverse.org), a collection of R packages for Data Science.
 
 ```r
 library(tidyverse) # working with data frames, plotting
@@ -257,7 +257,7 @@ List of 5
 
 The information listed captures the following:
 
-1. The center point (`$center`), scaling (`$scale`) and the standard deviation(`$sdev`) of each principal component
+1. The center point (`$center`), scaling (`$scale`) and the standard deviation(`$sdev`) of each original variable
 2. The relationship (correlation or anticorrelation, etc) between the initial variables and the principal components (`$rotation`)
 3. The values of each sample in terms of the principal components (`$x`)
 
@@ -461,7 +461,7 @@ From the graph, you can see the optimal `k` is around 10, where the curve is sta
 
 #### Hierarchical clustering
 
-k-means clustering requires us to specify the number of clusters, and determining the optimal number of clusters is often not trivial. Hierarchical clustering is an alternative approach which builds a hierarchy from the bottom-up, and doesn’t require us to specify the number of clusters beforehand but requires extra steps to extract final clusters. 
+k-means clustering requires us to specify the number of clusters, and determining the optimal number of clusters is often not trivial. Hierarchical clustering is an alternative approach which builds a hierarchy from the bottom-up, and doesn’t require us to specify the number of clusters beforehand but requires extra steps to extract final clusters.
 The algorithm works as follows:
 
 - Put each data point in its own cluster.

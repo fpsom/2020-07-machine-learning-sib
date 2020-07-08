@@ -14,6 +14,7 @@ install.packages("GGally")
 install.packages("caret")
 install.packages("gmodels")
 install.packages("rpart")
+install.packages("rpart.plot")
 install.packages("dendextend")
 install.packages("randomForest")
 install.packages("mlr3")
@@ -30,6 +31,9 @@ library(devtools)
 install_github("vqv/ggbiplot")
 ```
 
+
+In case you encounter issues with `ggbiplot`, please have a look at this [GitHub issue](https://github.com/vqv/ggbiplot/issues/53#issuecomment-456464102).
+
 Load them to make sure they were successfully installed.
 ```
 # Load packages
@@ -38,6 +42,7 @@ library(GGally)
 library(caret)
 library(gmodels)
 library(rpart)
+library(rpart.plot)
 library(randomForest)
 library(ggbiplot)
 library(dendextend)
