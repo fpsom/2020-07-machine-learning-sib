@@ -1,18 +1,18 @@
 <div class="sponsor-logos">
   <a href="https://www.sib.swiss/" title="SIB">
-    <img style="margin-right:50px" alt="SIB" src="static/images/SIB-Logo.png" width="120"/>
+    <img style="margin-right:50px" alt="SIB" src="static/images/SIB-Logo.png" width="100"/>
   </a>
   <a href="http://inab.certh.gr/" title="INAB/CERTH">
-    <img style="margin-right:50px" alt="INAB/CERTH" src="static/images/INAB-logo.png" width="120"/>
+    <img style="margin-right:50px" alt="INAB/CERTH" src="static/images/INAB-logo.png" width="100"/>
   </a>
   <a href="https://www.elixir-europe.org/" title="ELIXIR">
-    <img style="margin-right:50px" alt="ELIXIR" src="static/images/ELIXIR-logo.png" width="120"/>
+    <img style="margin-right:50px" alt="ELIXIR" src="static/images/ELIXIR-logo.png" width="100"/>
   </a>
   <a href="https://www.uom.ac.mu/" title="University of Mauritius">
-    <img style="margin-right:50px" alt="Funders" src="static/images/UoM-Logo.png" width="120"/>
+    <img style="margin-right:50px" alt="Funders" src="static/images/UoM-Logo.png" width="100"/>
   </a>
   <a href="https://www.h3abionet.org/" title="H3ABioNet">
-    <img style="margin-right:50px" alt="Funders" src="static/images/H3ABionetLogo.png" width="120"/>
+    <img style="margin-right:50px" alt="Funders" src="static/images/H3ABionetLogo.png" width="100"/>
   </a>
 </div>  
 
