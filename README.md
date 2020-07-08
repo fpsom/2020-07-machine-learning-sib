@@ -1,68 +1,113 @@
-[![Zenodo DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3403768.svg)](https://zenodo.org/record/3403768)
-
 <div class="sponsor-logos">
+  <a href="https://www.sib.swiss/" title="SIB">
+    <img style="margin-right:50px" alt="SIB" src="static/images/SIB-Logo.png" width="120"/>
+  </a>
+  <a href="http://inab.certh.gr/" title="INAB/CERTH">
+    <img style="margin-right:50px" alt="INAB/CERTH" src="static/images/INAB-logo.png" width="120"/>
+  </a>
   <a href="https://www.elixir-europe.org/" title="ELIXIR">
     <img style="margin-right:50px" alt="ELIXIR" src="static/images/ELIXIR-logo.png" width="120"/>
   </a>
-  <a href="http://inab.certh.gr/" title="INAB/CERTH">
-    <img style="margin-right:50px" alt="ELIXIR-GR" src="static/images/INAB-logo.png" width="120"/>
+  <a href="https://www.uom.ac.mu/" title="University of Mauritius">
+    <img style="margin-right:50px" alt="Funders" src="static/images/UoM-Logo.png" width="120"/>
   </a>
   <a href="https://www.h3abionet.org/" title="H3ABioNet">
     <img style="margin-right:50px" alt="Funders" src="static/images/H3ABionetLogo.png" width="120"/>
   </a>
 </div>  
 
-## Overview of the Material for the [BC]2 2019 workshop
+## Overview of the course material for the SIB "Introduction to Machine Learning" course
 
-**When**: September 9th, 09:00 to 16:00
+**When**: 22-23 July 2020, 09:00 - 16:30 CEST
 
-**Where**: University of Basel, [Kollegienhaus building, Petersplatz 1](https://www.google.ch/maps/place/Petersplatz+1,+4051+Basel/@47.5584029,7.5825258,17.67z/data=!4m13!1m7!3m6!1s0x4791b9a96c44bba1:0xe0a7bc8b66787bdb!2sPetersplatz+1,+4051+Basel!3b1!8m2!3d47.5586129!4d7.5827926!3m4!1s0x4791b9a96c44bba1:0xe0a7bc8b66787bdb!8m2!3d47.5586129!4d7.5827926), CH-4001 Basel
+**Where**: Online. Streamed from Greece and Mauritius. More information [here](https://www.sib.swiss/training/course/2020-07-machine-learning)
 
-**Room**: Regenzzimmer 111
 
-### Organisers and tutors
+### Instructors and helpers
 
-[**Amel Ghouila**](https://amelgh.github.io/), [H3ABioNet](https://www.h3abionet.org/)
+**Instructors**:
 
-[**Fotis Psomopoulos**](https://fpsom.github.io/), [INAB-CERTH](http://inab.certh.gr), ELIXIR-GR
+- [**Shakuntala Baichoo**](https://www.linkedin.com/in/shakuntala), [University of Mauritius](https://www.uom.ac.mu/), [H3ABioNet](https://www.h3abionet.org/)
+
+- [**Fotis Psomopoulos**](https://fpsom.github.io/), [INAB-CERTH](http://inab.certh.gr), [ELIXIR-GR](https://www.elixir-greece.org/)
+
+**Helpers**:
+
+- **Wandrille Duchemin**, [sciCORE](https://scicore.unibas.ch/), [SIB](https://www.sib.swiss/)
+
+- **Thuong Van Du Tran**, [Vital-IT](https://www.vital-it.ch/), [SIB](https://www.sib.swiss/)
+
+
 
 ### Overview
-Machine learning has emerged as a discipline that enables computers to assist humans in making sense of large and complex data sets. With the drop-in cost of sequencing technologies, large amounts of omics data are being generated and made accessible to researchers. Analysing these complex high-volume data is not trivial and the use of classical tools cannot explore their full potential. Machine learning can thus be very useful in mining large omics datasets to uncover new insights that can advance the field of medicine and improve health care.
+With the rise in high-throughput sequencing technologies, the volume of omics data has grown exponentially in recent times and a major issue is to mine useful knowledge from these data which are also heterogeneous in nature. Machine learning (ML) is a discipline in which computers perform automated learning without being programmed explicitly and assist humans to make sense of large and complex data sets. The analysis of complex high-volume data is not trivial and classical tools cannot be used to explore their full potential. Machine learning can thus be very useful in mining large omics datasets to uncover new insights that can advance the field of bioinformatics.
 
-The aim of this tutorial is to introduce participants to the Machine learning (ML) taxonomy and common machine learning algorithms. The tutorial will cover the methods being used to analyse different omics data sets by providing a practical context through the use of basic but widely used R and Python libraries. The tutorial will comprise a number of hands on exercises and challenges, where the participants will acquire a first understanding of the standard ML processes as well as the practical skills in applying them on familiar problems and publicly available real-world data sets.
+This 2-day course will introduce participants to the machine learning taxonomy and the applications of common machine learning algorithms to omics data. The course will cover the common methods being used to analyse different omics data sets by providing a practical context through the use of basic but widely used R libraries. The course will comprise a number of hands-on exercises and challenges where the participants will acquire a first understanding of the standard ML processes, as well as the practical skills in applying them on familiar problems and publicly available real-world data sets.
 
 ### Learning objectives
 
+At the end of the course, the participants will be able to:
 - Understand the ML taxonomy and the commonly used machine learning algorithms for analysing “omics” data
 - Understand differences between ML algorithms categories and to which kind of problem they can be applied
 - Understand different applications of ML in different -omics studies
-- Use some basic, widely used Python and R packages for ML
+- Use some basic, widely used R packages for ML
 - Interpret and visualize the results obtained from ML analyses on omics datasets
 - Apply the ML techniques to analyse their own datasets
 
 ### Audience and requirements
 
-This introductory tutorial is aimed towards bioinformaticians (graduate students and researchers) familiar with different omics data technologies that are interested in applying machine learning to analyse them.
+This course is intended for master and PhD students, post-docs and staff scientists familiar with different omics data technologies who are interested in applying machine learning to analyse these data. No prior knowledge of Machine Learning concepts and methods is expected nor required.
 
 ### Prerequisites
 
-- Previous experience in Bioinformatics analysis
-- Familiarity with any programming language (especially R) is preferable but not necessary
+#### Knowledge / competencies
+
+Familiarity with any programming language will be required (familiarity with R will be preferable).
+
+#### Technical
+This course will be streamed, you are thus required to have your own computer with an internet connection. In order to ensure clear communication between Instructors and participants, we will be using collaborative tools, such as [Google Drive](https://www.google.com/drive/), [Dropbox](https://www.dropbox.com/) or [Google Colab](https://colab.research.google.com/notebooks/intro.ipynb).
 
 _Maximum participants_: 30
 
 ### Schedule
 
+**Day 1**
+
 | Time  |  Details |
 |--------|----------|
-| 09:00 - 09:15	| **Tutorial introduction**. <br /> <br /> - Get to know each other. <br /> - Setup <br /> [_Link to material_](episodes/setup.md) |
-| Part I: Background | |
-| 09:15 - 10:45	| **Introduction to ML / DM**. <br /><br /> - Data Mining.<br /> - Machine Learning basic concepts.<br /> - Taxonomy of ML and examples of algorithms. <br /> - Deep learning overview. <br /> [_Link to material_](episodes/01-intro.md)
-| 11:00 - 12:30	| **Applications of ML in Bioinformatics**.<br /><br /> - Examples of different ML/DM techniques that can be applied to different NGS data analysis pipelines. <br /> - How to choose the right ML technique? <br /> [_Link to material_](episodes/02-bioinformatics-and-ml.md) |
-| Part II: Hands-on | |
-| 13:15 - 14:45 | **Loading and exploring omics data**.<br /><br /> - What is Exploratory Data Analysis (EDA) and why is it useful? <br /> - Unsupervised Learning. <br /> - How could unsupervised learning be used to analyze omics data? <br /> [_Link to material_](episodes/03-eda-unsupervised-learning.md) |
-| 15:00 - 16:30	| **Supervised Learning** <br /><br /> **_Classification_**. <br /> - How could supervised learning be used to analyze omics data. <br /> **_Regression_**. <br /> - What if the target variable is numerical rather than categorical? <br /> [_Link to material_](episodes/04-supervised-learning.md) |
-| 16:30	| Closing, discussion and resource sharing|
+| 09:00 - 09:30 | **Course Introduction**. <br /> <br /> - Welcome. <br /> - Introduction and CoC. <br /> - Way to interact <br /> - Practicalities (agenda, breaks, etc). <br />- Setup <br /> [_Link to material_](episodes/setup.md) |
+| 09:30 - 10:00 | **Introduction to Machine Learning** (_theory_) |
+| 10:00 - 11:30 | **What is Exploratory Data Analysis (EDA) and why is it useful?** (_hands-on_) <br /><br /> - Loading omics data <br /> - PCA <br />|
+| 11:30 - 11:45 | _Coffee Break_ |
+| 11:45 - 12:15 | **Introduction to Unsupervised Learning** (_theory_) |
+| 12:15 - 13:00 | **Agglomerative Clustering: k-means** (_practical_) |
+| 13:00 - 14:00 | _Lunch break_ |
+| 14:00 - 14:45 | **Agglomerative Clustering: k-means** (_practical_) (cont'd) |
+| 14:45 - 15:30 | **Divisive Clustering: hierarchical clustering** (_practical_) |
+| 15:30 - 15:45 | _Coffee Break_ |
+| 15:45 - 16:30 | **Divisive Clustering: hierarchical clustering** (_practical_) (cont'd) |
+| 16:30         | _Closing of Day 1_ |
+
+
+**Day 2**
+
+| Time  |  Details |
+|--------|----------|
+| 09:00 - 09:30 | **Welcome Day 2**. <br /> <br /> - Questions from Day 1 <br /> - Agenda <br /> |
+| 09:30 - 10:00 | **Introduction to Supervised Learning** (_theory_) <br /> <br /> - Overview of multiple algorithms <br />
+- Advantages and Disadvantages <br /> |
+| 10:00 - 10:30 | **Classification Metrics** (_theory_) <br /> <br /> - F1 Score, Precision, Recall <br />
+- Confusion Matrix, ROC-AUC <br /> |
+| 10:30 - 11:30 | **Classification** (_practical_) <br /> <br /> - Decision trees <br />
+- Random Forests <br /> |
+| 11:30 - 11:45 | _Coffee Break_ |
+| 11:45 - 12:30 | **Classification** (_practical_) (cont'd)
+| 12:30 - 13:30 | _Lunch break_ |
+| 13:30 - 14:00 | **Regression** (_theory_) |
+| 14:00 - 15:15 | **Regression** (_practical_) <br /> <br /> - Linear regression <br /> - Generalized Linear Model (GLM) <br />|
+| 15:15 - 15:30 | _Coffee Break_ |
+| 15:30 - 16:00 | **Regression** (_practical_) (cont'd) |
+| 16:00 - 16:30 | _Closing questions, Discussion_ |
 
 ## Other examples
 
@@ -90,6 +135,18 @@ Relevant literature includes:
 5. [A review on machine learning principles for multi-view biological data integration](https://academic.oup.com/bib/article/19/2/325/2664338)
 
 
+## Additional information
+
+**Coordination**: Monique Zahn
+
+We will recommend 0.50 ECTS credits for this course (given a passed exam at the end of the course).
+
+You are welcome to register to the SIB courses mailing list to be informed of all future courses and workshops, as well as all important deadlines using the form [here](https://lists.sib.swiss/mailman/listinfo/courses).
+
+SIB abides by the [ELIXIR Code of Conduct](https://elixir-europe.org/events/code-of-conduct). Participants of SIB courses are also required to abide by the same code.
+
+For more information, please contact [training@sib.swiss](mailto:training@sib.swiss).
+
 
 ## License
 
@@ -99,4 +156,4 @@ This material is made available under the [Creative Commons Attribution 4.0 Inte
 
 ## Citation
 
-Amel Ghouila, & Fotis E. Psomopoulos. (2019, September 9). Introduction to Machine Learning: Opportunities for advancing omics data analysis (Version v1.0.0). Zenodo. http://doi.org/10.5281/zenodo.3403768
+_tba_

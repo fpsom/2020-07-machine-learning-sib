@@ -12,10 +12,12 @@ Open RStudio and install the following packages.
 install.packages("tidyverse")
 install.packages("GGally")
 install.packages("caret")
-install.packages("devtools")
 install.packages("gmodels")
+install.packages("rpart")
 install.packages("dendextend")
 install.packages("randomForest")
+install.packages("mlr3")
+install.packages("devtools")
 
 ## To install needed Bioconductor packages:
 if (!requireNamespace("BiocManager", quietly = TRUE))
@@ -35,9 +37,12 @@ library(tidyverse) # working with data frames, plotting
 library(GGally)
 library(caret)
 library(gmodels)
+library(rpart)
+library(randomForest)
 library(ggbiplot)
 library(dendextend)
-library(randomForest)
+library(mlr3)
+
 
 library(edgeR)      # cpm, etc -- RNA-Seq normalization
 library(limma)      # lmFit, etc -- fitting many models
