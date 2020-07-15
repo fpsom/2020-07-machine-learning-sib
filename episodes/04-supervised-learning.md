@@ -46,10 +46,10 @@ Here, we will use the `rpart` and the `rpart.plot` package in order to produce a
 
 ```r
 # split into training and test subsets
-set.seed(5)
+set.seed(1000)
 ind <- sample(2, nrow(breastCancerData), replace=TRUE, prob=c(0.7, 0.3))
-breastCancerData.train <- breastCancerData[ind==1,]
-breastCancerData.test <- breastCancerData[ind==2,]
+breastCancerData.train <- breastCancerDataNoID[ind==1,]
+breastCancerData.test <- breastCancerDataNoID[ind==2,]
 ```
 
 Now, we will load the library and create our model. We would like to create a model that predicts the `Diagnosis` based on the mean of the radius and the area, as well as the SE of the texture. For ths reason we'll use the notation of `myFormula <- Diagnosis ~ Radius.Mean + Area.Mean + Texture.SE`. If we wanted to create a prediction model based on all variables, we will have used `myFormula <- Diagnosis ~ .` instead. Finally, `minsplit` stands for the the minimum number of instances in a node so that it is split.
@@ -161,6 +161,7 @@ In this exercise, we will be using the `randomForest`. First, let's train the mo
 
 ```r
 library(randomForest)
+set.seed(1000)
 rf <- randomForest(Diagnosis ~ ., data = breastCancerData.train,
                    ntree=100,
                    proximity=T)
@@ -206,7 +207,7 @@ plot(rf, main = "")
 
 ![Error rate plot for the Random Forest model](https://raw.githubusercontent.com/fpsom/IntroToMachineLearning/gh-pages/static/images/error-rate-rf.png "Error rate plot for the Random Forest model")
 
-We can also review which of the variables has the most "importance" (i.e. impact to the performance of the model):
+We can also review which of the variables has the highest "importance" (i.e. impact to the performance of the model):
 
 ```r
 importance(rf)
@@ -271,10 +272,20 @@ BreastCancer_pred_RD   B   M
 
 ![Margin plot for the Random Forest](https://raw.githubusercontent.com/fpsom/IntroToMachineLearning/gh-pages/static/images/margin-rf.png "Margin plot for the Random Forest")
 
+Feature selection: We can evaluate the prediction performance of models with reduced numbers of variables that are ranked by their importance.
+
+```r
+result <- rfcv(breastCancerData.train, breastCancerData.train$Diagnosis, cv.fold=3)
+with(result, plot(n.var, error.cv, log="x", type="o", lwd=2))
+```
+
+![Random Forest Cross-Valdidation for feature selection](https://raw.githubusercontent.com/fpsom/IntroToMachineLearning/gh-pages/static/images/rfcv.png "Margin plot for the Random Forest")
+
 | **Exercises**  |   |
 |--------|----------|
 | 1 | ToDo |
 | 2 | ToDo |
+
 
 ## Supervised Learning II: regression
 
