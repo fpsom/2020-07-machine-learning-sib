@@ -279,7 +279,7 @@ result <- rfcv(breastCancerData.train, breastCancerData.train$Diagnosis, cv.fold
 with(result, plot(n.var, error.cv, log="x", type="o", lwd=2))
 ```
 
-![Random Forest Cross-Valdidation for feature selection](https://raw.githubusercontent.com/fpsom/IntroToMachineLearning/gh-pages/static/images/rfcv.png "Margin plot for the Random Forest")
+![Random Forest Cross-Valdidation for feature selection](https://github.com/fpsom/2020-07-machine-learning-sib/blob/master/static/images/rfcv.png "Random Forest Cross-Valdidation for feature selection")
 
 | **Exercises**  |   |
 |--------|----------|
