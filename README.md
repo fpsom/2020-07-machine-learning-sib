@@ -94,12 +94,9 @@ _Maximum participants_: 30
 | Time  |  Details |
 |--------|----------|
 | 09:00 - 09:30 | **Welcome Day 2**. <br /> <br /> - Questions from Day 1 <br /> - Agenda <br /> |
-| 09:30 - 10:00 | **Introduction to Supervised Learning** (_theory_) <br /> <br /> - Overview of multiple algorithms <br />
-- Advantages and Disadvantages <br /> |
-| 10:00 - 10:30 | **Classification Metrics** (_theory_) <br /> <br /> - F1 Score, Precision, Recall <br />
-- Confusion Matrix, ROC-AUC <br /> |
-| 10:30 - 11:30 | **Classification** (_practical_) <br /> <br /> - Decision trees <br />
-- Random Forests <br /> |
+| 09:30 - 10:00 | **Introduction to Supervised Learning** (_theory_) <br /> <br /> - Overview of multiple algorithms <br /> - Advantages and Disadvantages <br /> |
+| 10:00 - 10:30 | **Classification Metrics** (_theory_) <br /> <br /> - F1 Score, Precision, Recall <br /> - Confusion Matrix, ROC-AUC <br /> |
+| 10:30 - 11:30 | **Classification** (_practical_) <br /> <br /> - Decision trees <br /> - Random Forests <br /> |
 | 11:30 - 11:45 | _Coffee Break_ |
 | 11:45 - 12:30 | **Classification** (_practical_) (cont'd)
 | 12:30 - 13:30 | _Lunch break_ |
