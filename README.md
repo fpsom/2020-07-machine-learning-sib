@@ -77,13 +77,13 @@ _Maximum participants_: 30
 |--------|----------|
 | 09:00 - 09:30 | **Course Introduction**. <br /> <br /> - Welcome. <br /> - Introduction and CoC. <br /> - Way to interact <br /> - Practicalities (agenda, breaks, etc). <br />- Setup <br /> [_Link to material_](episodes/setup.md) |
 | 09:30 - 10:00 | **Introduction to Machine Learning** (_theory_) |
-| 10:00 - 11:30 | **What is Exploratory Data Analysis (EDA) and why is it useful?** (_hands-on_) <br /><br /> - Loading omics data <br /> - PCA <br />|
+| 10:00 - 11:30 | **What is Exploratory Data Analysis (EDA) and why is it useful?** (_hands-on_) <br /><br /> - Loading omics data <br /> - PCA <br /> [_Link to material_](episodes/03-eda-unsupervised-learning.md) |
 | 11:30 - 11:45 | _Coffee Break_ |
 | 11:45 - 12:15 | **Introduction to Unsupervised Learning** (_theory_) |
-| 12:15 - 13:00 | **Agglomerative Clustering: k-means** (_practical_) |
+| 12:15 - 13:00 | **Agglomerative Clustering: k-means** (_practical_) [_Link to material_](episodes/03-eda-unsupervised-learning.md) |
 | 13:00 - 14:00 | _Lunch break_ |
 | 14:00 - 14:45 | **Agglomerative Clustering: k-means** (_practical_) (cont'd) |
-| 14:45 - 15:30 | **Divisive Clustering: hierarchical clustering** (_practical_) |
+| 14:45 - 15:30 | **Divisive Clustering: hierarchical clustering** (_practical_) [_Link to material_](episodes/03-eda-unsupervised-learning.md) |
 | 15:30 - 15:45 | _Coffee Break_ |
 | 15:45 - 16:30 | **Divisive Clustering: hierarchical clustering** (_practical_) (cont'd) |
 | 16:30         | _Closing of Day 1_ |
@@ -96,12 +96,12 @@ _Maximum participants_: 30
 | 09:00 - 09:30 | **Welcome Day 2**. <br /> <br /> - Questions from Day 1 <br /> - Agenda <br /> |
 | 09:30 - 10:00 | **Introduction to Supervised Learning** (_theory_) <br /> <br /> - Overview of multiple algorithms <br /> - Advantages and Disadvantages <br /> |
 | 10:00 - 10:30 | **Classification Metrics** (_theory_) <br /> <br /> - F1 Score, Precision, Recall <br /> - Confusion Matrix, ROC-AUC <br /> |
-| 10:30 - 11:30 | **Classification** (_practical_) <br /> <br /> - Decision trees <br /> - Random Forests <br /> |
+| 10:30 - 11:30 | **Classification** (_practical_) <br /> <br /> - Decision trees <br /> - Random Forests <br /> [_Link to material_](episodes/04-supervised-learning.md) |
 | 11:30 - 11:45 | _Coffee Break_ |
 | 11:45 - 12:30 | **Classification** (_practical_) (cont'd)
 | 12:30 - 13:30 | _Lunch break_ |
 | 13:30 - 14:00 | **Regression** (_theory_) |
-| 14:00 - 15:15 | **Regression** (_practical_) <br /> <br /> - Linear regression <br /> - Generalized Linear Model (GLM) <br />|
+| 14:00 - 15:15 | **Regression** (_practical_) <br /> <br /> - Linear regression <br /> - Generalized Linear Model (GLM) <br />  [_Link to material_](episodes/04-supervised-learning.md) |
 | 15:15 - 15:30 | _Coffee Break_ |
 | 15:30 - 16:00 | **Regression** (_practical_) (cont'd) |
 | 16:00 - 16:30 | _Closing questions, Discussion_ |
