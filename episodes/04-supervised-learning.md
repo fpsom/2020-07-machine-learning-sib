@@ -81,7 +81,7 @@ We see the following output and a figure:
 4 -1.00000000      6 0.2727273 0.3006993 0.04330166
 ```
 
-![Full decision tree](https://raw.githubusercontent.com/fpsom/IntroToMachineLearning/gh-pages/static/images/decisionTreeFull.png "Full decision tree")
+![Full decision tree](https://raw.githubusercontent.com/fpsom/2020-07-machine-learning-sib/master/static/images/decisionTreeFull.png "Full decision tree")
 
 The parameters that we used reflect the following aspects of the model:
 - `minsplit`: the minimum number of instances in a node so that it is split
@@ -110,7 +110,7 @@ B  245  34
 M   9   109
 ```
 
-![Pruned decision tree](https://raw.githubusercontent.com/fpsom/IntroToMachineLearning/gh-pages/static/images/decisionTreePruned.png "Pruned decision tree")
+![Pruned decision tree](https://raw.githubusercontent.com/fpsom/2020-07-machine-learning-sib/master/static/images/decisionTreePruned.png "Pruned decision tree")
 
 _Question: **What does the above "Confusion Matrix" tells you?**_
 
@@ -134,7 +134,7 @@ BreastCancer_pred   B   M
                 M   1  53
 ```
 
-![Prediction Plot](https://raw.githubusercontent.com/fpsom/IntroToMachineLearning/gh-pages/static/images/predictionPlot.png "Prediction Plot")
+![Prediction Plot](https://raw.githubusercontent.com/fpsom/2020-07-machine-learning-sib/master/static/images/predictionPlot.png "Prediction Plot")
 
 | **Exercises**  |   |
 |--------|----------|
@@ -152,6 +152,8 @@ Package `randomForest`
 - cannot handle data with missing values
 - a limit of 32 to the maximum number of levels of each categorical attribute
 - extensions: extendedForest, gradientForest
+
+
 Package `party: cforest()`
 - not limited to the above maximum levels
 - slow
@@ -205,7 +207,7 @@ We can view the overall performance of the model here:
 plot(rf, main = "")
 ```
 
-![Error rate plot for the Random Forest model](https://raw.githubusercontent.com/fpsom/IntroToMachineLearning/gh-pages/static/images/error-rate-rf.png "Error rate plot for the Random Forest model")
+![Error rate plot for the Random Forest model](https://raw.githubusercontent.com/fpsom/2020-07-machine-learning-sib/master/static/images/error-rate-rf.png "Error rate plot for the Random Forest model")
 
 We can also review which of the variables has the highest "importance" (i.e. impact to the performance of the model):
 
@@ -251,7 +253,7 @@ Symmetry.Worst                 2.1507714
 Fractal.Dimension.Worst        1.1498020
 ```
 
-![Importance of the individual variables](https://raw.githubusercontent.com/fpsom/IntroToMachineLearning/gh-pages/static/images/importance-variables.png "Importance of the individual variables")
+![Importance of the individual variables](https://raw.githubusercontent.com/fpsom/2020-07-machine-learning-sib/master/static/images/importance-variables.png "Importance of the individual variables")
 
 Let's try to do a prediction of the `Diagnosis` for the test set, using the new model. The margin of a data point is as the proportion of votes for the correct class minus maximum proportion of votes for other classes. Positive margin means correct classification.
 
@@ -270,7 +272,7 @@ BreastCancer_pred_RD   B   M
                    M   2  63
 ```
 
-![Margin plot for the Random Forest](https://raw.githubusercontent.com/fpsom/IntroToMachineLearning/gh-pages/static/images/margin-rf.png "Margin plot for the Random Forest")
+![Margin plot for the Random Forest](https://raw.githubusercontent.com/fpsom/2020-07-machine-learning-sib/master/static/images/margin-rf.png "Margin plot for the Random Forest")
 
 Feature selection: We can evaluate the prediction performance of models with reduced numbers of variables that are ranked by their importance.
 
@@ -407,7 +409,7 @@ plot(breastCancerData$Radius.Mean, pred, xlab = "Observed", ylab = "Prediction")
 abline(a = 0, b = 1)
 ```
 
-![Prediction Plot GLM](https://raw.githubusercontent.com/fpsom/IntroToMachineLearning/gh-pages/static/images/predictionPlotGLM.png "Prediction Plot GLM")
+![Prediction Plot GLM](https://raw.githubusercontent.com/fpsom/2020-07-machine-learning-sib/master/static/images/predictionPlotGLM.png "Prediction Plot GLM")
 
 | **Exercises**  |   |
 |--------|----------|
