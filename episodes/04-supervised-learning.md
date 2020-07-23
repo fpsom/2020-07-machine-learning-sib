@@ -332,7 +332,7 @@ This tells us what are the coefficients of `Concave.Points.Mean` and `Area.Mean`
 
 Let's make predictions on our training dataset and visualize
 ```r
-preds=predict(bc_model_full)
+preds <- predict(bc_model_full)
 
 plot(bc$Radius.Mean, preds, xlab = "Observed", ylab = "Prediction")
 abline(a = 0, b = 1)
@@ -377,7 +377,7 @@ bc_test <- bc[ind==2,]
 summary(bc_model)
 
 
-############### Evaluating graphically 
+######Evaluating graphically 
 #Let's make predictions on our training dataset and store the predictions as a new column
 bc_train$pred <- predict(bc_model)
 
@@ -400,9 +400,7 @@ ggplot(bc_test, aes(x = pred, y = Radius.Mean)) +
 
 Now let's use the RMSE and the R_square metrics to evaluate our model on the training and test set.
 
-###################################################
-#1. Evaluating model using RMSE - on training set
-###################################################
+#####1. Evaluating model using RMSE - on training set
 ```r
 #Calculate residuals
 res <- bc_train$Radius.Mean-bc_train$pred
@@ -418,12 +416,10 @@ res <- bc_train$Radius.Mean-bc_train$pred
 ```
 So we can see that our RMSE is very small compared to SD, hence it is a good model
 
-# Exercise 1 - Calculate RMSE for the test data and check if the model is not overfit
+######Exercise 1 Calculate RMSE for the test data and check if the model is not overfit.
 
+#####2. Evaluating model using R Square - on training set
 
-###################################################
-#2. Evaluating model using R Square - on training set
-###################################################
 ```r
 # Calculate mean of outcome: bc_mean. Print it
 bc_mean <- mean(bc_train$Radius.Mean)
@@ -439,9 +435,9 @@ rss <- sum(err^2)
 (rsq <- 1-(rss/tss))
 [1] 0.974028
 ```
-# This again confirms that our model is very good as the R_Square value is very close to 1
+This again confirms that our model is very good as the R_Square value is very close to 1
 
-# Exercise 2 - Calculate R_Square for the test data and check if the model is not overfit
+###### Exercise 2 Calculate R_Square for the test data and check if the model is not overfit.
 
 
 ### Generalized Linear Model (GLM)
@@ -498,7 +494,7 @@ ggplot(bc_train, aes(x = pred2, y = Radius.Mean)) +
   geom_abline(color = "blue")
   
   
-  ############## RMSE
+######RMSE
 res <- bc_train$Radius.Mean-bc_train$pred2
 
 (rmse <- sqrt(mean(res^2)))
@@ -508,7 +504,7 @@ res <- bc_train$Radius.Mean-bc_train$pred2
 (sd_bc_train <- sd(bc_train$Radius.Mean))
 [1] 3.494182
 
-########## R_Sq
+######R_Sq
 # Calculate mean of outcome: bc_mean.
 bc_mean <- mean(bc_train$Radius.Mean)
 
@@ -524,7 +520,7 @@ rss <- sum(err^2)
 [1] 0.8937169
 
 ```
-# The plot, the value of RMSE (higher than in linear regression) and RSquare (lower than that for linear regression) indicates that this model is not as good as linear regression.
+The plot, the value of RMSE (higher than in linear regression) and RSquare (lower than that for linear regression) indicates that this model is not as good as linear regression.
 
 ![Prediction Plot GLM](https://raw.githubusercontent.com/fpsom/2020-07-machine-learning-sib/master/static/images/predictionPlotGLM.png "Prediction Plot GLM")
 
