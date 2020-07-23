@@ -29,4 +29,4 @@ Which algorithm should you choose to start? In short; The simplest one!
 
 ### Slides / material
 
-The slides for this section are available [here](https://doi.org/10.6084/m9.figshare.9784190)
+The slides for this section are available [here](https://raw.githubusercontent.com/fpsom/2020-07-machine-learning-sib/master/static/files/IntroML_SIB_Jul-2020.pdf)
