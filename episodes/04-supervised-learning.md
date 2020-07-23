@@ -334,7 +334,7 @@ Let's make predictions on our training dataset and visualize
 ```r
 preds <- predict(bc_model_full)
 
-plot(bc$Radius.Mean, preds, xlab = "Observed", ylab = "Prediction")
+plot(preds, bc$Radius.Mean, xlab = "Prediction", ylab = "Observed")
 abline(a = 0, b = 1)
 ```
 ![Prediction Plot GLM](https://raw.githubusercontent.com/fpsom/2020-07-machine-learning-sib/master/static/images/lm_full_dataset.png "Prediction Plot GLM")
