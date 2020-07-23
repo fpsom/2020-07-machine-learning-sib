@@ -18,7 +18,7 @@ library(tidyverse) # working with data frames, plotting
 breastCancerData <- read_csv("https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/wdbc.data",
                col_names = FALSE)
 
-breastCancerDataColNames <- read_csv("https://raw.githubusercontent.com/fpsom/IntroToMachineLearning/gh-pages/data/wdbc.colnames.csv",
+breastCancerDataColNames <- read_csv("https://raw.githubusercontent.com/fpsom/2020-07-machine-learning-sib/master/data/wdbc.colnames.csv",
                                      col_names = FALSE)
 
 colnames(breastCancerData) <- breastCancerDataColNames$X1
@@ -104,7 +104,7 @@ library(GGally)
 ggpairs(breastCancerDataNoID[1:5], aes(color=Diagnosis, alpha=0.4))
 ```
 
-![ggpairs output of the first 5 variables](https://raw.githubusercontent.com/fpsom/IntroToMachineLearning/gh-pages/static/images/ggpairs5variables.png "ggpairs output of the first 5 variables")
+![ggpairs output of the first 5 variables](https://raw.githubusercontent.com/fpsom/2020-07-machine-learning-sib/master/static/images/ggpairs5variables.png "ggpairs output of the first 5 variables")
 
 Note that the features have widely varying centers and scales (means and standard deviations), so we'll want to center and scale them in some situations. We will use the `[caret](https://cran.r-project.org/web/packages/caret/vignettes/caret.html)` package for this, and specifically, the `preProcess` function.
 
@@ -166,7 +166,7 @@ library(GGally)
 ggpairs(breastCancerDataNoID_tr[1:5], aes(color=Diagnosis, alpha=0.4))
 ```
 
-![ggpairs output of the first 5 variables of the recentered/rescaled data](https://raw.githubusercontent.com/fpsom/IntroToMachineLearning/gh-pages/static/images/ggpairs5variables_tr.png "ggpairs output of the first 5 variables of the recentered/rescaled data")
+![ggpairs output of the first 5 variables of the recentered/rescaled data](https://raw.githubusercontent.com/fpsom/2020-07-machine-learning-sib/master/static/images/ggpairs5variables_tr.png "ggpairs output of the first 5 variables of the recentered/rescaled data")
 
 _Question: **Do you see any differences?**_
 
@@ -275,7 +275,7 @@ ggbiplot(ppv_pca, choices=c(1, 2),
   theme(legend.position = "bottom")
 ```
 
-![Visualization of the first two PCs on the UCI Breast Cancer dataset](https://raw.githubusercontent.com/fpsom/IntroToMachineLearning/gh-pages/static/images/pc12Visualization_Full.png "Visualization of the first two PCs on the UCI Breast Cancer dataset")
+![Visualization of the first two PCs on the UCI Breast Cancer dataset](https://raw.githubusercontent.com/fpsom/2020-07-machine-learning-sib/master/static/images/pc12Visualization_Full.png "Visualization of the first two PCs on the UCI Breast Cancer dataset")
 
 | **Exercises**  |   |
 |--------|----------|
@@ -350,7 +350,7 @@ ggplot(as.data.frame(ppv_pca$x), aes(x=PC1, y=PC2, color=as.factor(km.out$cluste
   labs(title = "K-Means clusters against PCA", x = "PC1", y = "PC2", color = "Cluster", shape = "Diagnosis")
 ```
 
-![Visualization of the k-means results against the first two PCs on the UCI Breast Cancer dataset](https://raw.githubusercontent.com/fpsom/IntroToMachineLearning/gh-pages/static/images/kmeans-pc12-Visualization.png "Visualization of the k-means results against the first two PCs on the UCI Breast Cancer dataset")
+![Visualization of the k-means results against the first two PCs on the UCI Breast Cancer dataset](https://raw.githubusercontent.com/fpsom/2020-07-machine-learning-sib/master/static/images/kmeans-pc12-Visualization.png "Visualization of the k-means results against the first two PCs on the UCI Breast Cancer dataset")
 
 
 (_There is a lot of information to unpack here, so we will discuss during the course what these 5 lines of code actually do_)
@@ -450,7 +450,7 @@ ggplot(elbow, aes(x = X2.max_k, y = wss)) +
   scale_x_continuous(breaks = seq(1, 20, by = 1))
 ```
 
-!["Elbow" plot for multiple values of k](https://raw.githubusercontent.com/fpsom/IntroToMachineLearning/gh-pages/static/images/elbow-plot-kmeans.png "Elbow plot for multiple values of k")
+!["Elbow" plot for multiple values of k](https://raw.githubusercontent.com/fpsom/2020-07-machine-learning-sib/master/static/images/elbow-plot-kmeans.png "Elbow plot for multiple values of k")
 
 From the graph, you can see the optimal `k` is around 10, where the curve is starting to have a diminishing return.
 
@@ -498,7 +498,7 @@ hclust_avg <- hclust(dist_mat, method = 'average')
 plot(hclust_avg)
 ```
 
-![Hierarchical clustering (attempt 1)](https://raw.githubusercontent.com/fpsom/IntroToMachineLearning/gh-pages/static/images/hclust-fig1.png "Hierarchical clustering (attempt 1)")
+![Hierarchical clustering (attempt 1)](https://raw.githubusercontent.com/fpsom/2020-07-machine-learning-sib/master/static/images/hclust-fig1.png "Hierarchical clustering (attempt 1)")
 
 Notice how the dendrogram is built and every data point finally merges into a single cluster with the height(distance) shown on the y-axis.
 
@@ -516,7 +516,7 @@ rect.hclust(hclust_avg , k = 2, border = c("red","green"), which = c(1, 2))
 # Draw a line at the height that the cut takes place
 abline(h = 18, col = 'red', lwd=3, lty=2)
 ```
-![Hierarchical clustering (attempt 2)](https://raw.githubusercontent.com/fpsom/IntroToMachineLearning/gh-pages/static/images/hclust-fig2.png "Hierarchical clustering (attempt 2)")
+![Hierarchical clustering (attempt 2)](https://raw.githubusercontent.com/fpsom/2020-07-machine-learning-sib/master/static/images/hclust-fig2.png "Hierarchical clustering (attempt 2)")
 
 Now we can see the two clusters enclosed in two different colored boxes. We can also use the `color_branches()` function from the `dendextend` library to visualize our tree with different colored branches.
 
@@ -528,7 +528,7 @@ avg_col_dend <- color_branches(avg_dend_obj, k = 2, groupLabels=TRUE)
 plot(avg_col_dend, main = "Cluster dendrogram with color per cluster (k = 2)", xlab = "Breast Cancer ID", ylab = "Height")
 ```
 
-![Hierarchical clustering (attempt 3)](https://raw.githubusercontent.com/fpsom/IntroToMachineLearning/gh-pages/static/images/hclust-fig3.png "Hierarchical clustering (attempt 3)")
+![Hierarchical clustering (attempt 3)](https://raw.githubusercontent.com/fpsom/2020-07-machine-learning-sib/master/static/images/hclust-fig3.png "Hierarchical clustering (attempt 3)")
 
 We can change the way branches are colored, to reflect the `Diagnosis` value:
 
@@ -537,7 +537,7 @@ avg_col_dend <- color_branches(avg_dend_obj, clusters = breastCancerData$Diagnos
 plot(avg_col_dend, main = "Cluster dendrogram with Diagnosis color", xlab = "Breast Cancer ID", ylab = "Height")
 ```
 
-![Hierarchical clustering (attempt 4)](https://raw.githubusercontent.com/fpsom/IntroToMachineLearning/gh-pages/static/images/hclust-fig4.png "Hierarchical clustering (attempt 4)")
+![Hierarchical clustering (attempt 4)](https://raw.githubusercontent.com/fpsom/2020-07-machine-learning-sib/master/static/images/hclust-fig4.png "Hierarchical clustering (attempt 4)")
 
 ```r
 ggplot(as.data.frame(ppv_pca$x), aes(x=PC1, y=PC2, color=as.factor(cut_avg), shape = breastCancerData$Diagnosis)) +
@@ -547,7 +547,7 @@ ggplot(as.data.frame(ppv_pca$x), aes(x=PC1, y=PC2, color=as.factor(cut_avg), sha
   labs(title = "Hierarchical clustering (cut at k=2) against PCA", x = "PC1", y = "PC2", color = "Cluster", shape = "Diagnosis")
 ```
 
-![Visualization of the Hierarchical clustering (cut at k=2) results against the first two PCs on the UCI Breast Cancer dataset](https://raw.githubusercontent.com/fpsom/IntroToMachineLearning/gh-pages/static/images/hclust-pc12-Visualization.png "Visualization of the Hierarchical clustering (cut at k=2) results against the first two PCs on the UCI Breast Cancer dataset")
+![Visualization of the Hierarchical clustering (cut at k=2) results against the first two PCs on the UCI Breast Cancer dataset](https://raw.githubusercontent.com/fpsom/2020-07-machine-learning-sib/master/static/images/hclust-pc12-Visualization.png "Visualization of the Hierarchical clustering (cut at k=2) results against the first two PCs on the UCI Breast Cancer dataset")
 
 | **Exercises**  |   |
 |--------|----------|
