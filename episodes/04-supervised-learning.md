@@ -337,7 +337,7 @@ preds <- predict(bc_model_full)
 plot(bc$Radius.Mean, preds, xlab = "Observed", ylab = "Prediction")
 abline(a = 0, b = 1)
 ```
-Prediction plot <to add>
+![Prediction Plot GLM](https://raw.githubusercontent.com/fpsom/2020-07-machine-learning-sib/master/static/images/lm_full_dataset.png "Prediction Plot GLM")
 
 We can also have a better look at what the model contains with `summary(bc_model_full)`:
 
@@ -386,6 +386,8 @@ ggplot(bc_train, aes(x = pred, y = Radius.Mean)) +
   geom_point() +
   geom_abline(color = "blue")
 ```
+![Prediction Plot GLM](https://raw.githubusercontent.com/fpsom/2020-07-machine-learning-sib/master/static/images/lm_train_dataset.png "Prediction Plot GLM")
+
 You will note that it is quite similar to when using whole dataset
 
 Let's predict using test data
@@ -522,7 +524,7 @@ rss <- sum(err^2)
 ```
 The plot, the value of RMSE (higher than in linear regression) and RSquare (lower than that for linear regression) indicates that this model is not as good as linear regression.
 
-![Prediction Plot GLM](https://raw.githubusercontent.com/fpsom/2020-07-machine-learning-sib/master/static/images/predictionPlotGLM.png "Prediction Plot GLM")
+![Prediction Plot GLM](https://raw.githubusercontent.com/fpsom/2020-07-machine-learning-sib/master/static/images/glm_train_dataset.png "Prediction Plot GLM")
 
 | **Exercises**  |   |
 |--------|----------|
