@@ -121,6 +121,9 @@ The material in the workshop has been based on the following resources:
 3. [Practical Machine Learning in R](https://leanpub.com/practical-machine-learning-r), by [Kyriakos Chatzidimitriou](https://leanpub.com/u/kyrcha), [Themistoklis Diamantopoulos](https://leanpub.com/u/thdiaman), [Michail Papamichail](https://leanpub.com/u/mpapamic), and [Andreas Symeonidis](https://leanpub.com/u/symeonid).
 4. [Linear models in R](https://monashbioinformaticsplatform.github.io/r-linear/topics/linear_models.html), by the [Monash Bioinformatics Platform](https://www.monash.edu/researchinfrastructure/bioinformatics)
 5. Relevant blog posts from the [R-Bloggers](https://www.r-bloggers.com/) website.
+6. [For Additional Practice and insights: Predicting the breast cancer by characteristics of the cell nuclei present in the image](https://rstudio-pubs-static.s3.amazonaws.com/411600_3185f5d17d104cc5beb4587094b905e9.html#comparison-with-scientific-paper)
+
+
 
 Relevant literature includes:
 
@@ -130,7 +133,7 @@ Relevant literature includes:
 3. [Statistics versus machine learning](https://www.nature.com/articles/nmeth.4642)
 4. [Machine learning and systems genomics approaches for multi-omics data](https://biomarkerres.biomedcentral.com/articles/10.1186/s40364-017-0082-y)
 5. [A review on machine learning principles for multi-view biological data integration](https://academic.oup.com/bib/article/19/2/325/2664338)
-
+6. [Generalized Linear Model(https://www.sciencedirect.com/topics/mathematics/generalized-linear-model)
 
 ## Additional information
 
