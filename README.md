@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/276078951.svg)](https://zenodo.org/badge/latestdoi/276078951)
+
 <div class="sponsor-logos">
   <a href="https://www.sib.swiss/" title="SIB">
     <img style="margin-right:50px" alt="SIB" src="static/images/SIB-Logo.png" width="100"/>
@@ -160,4 +162,4 @@ This material is made available under the [Creative Commons Attribution 4.0 Inte
 
 ## Citation
 
-_tba_
+Shakuntala Baichoo, Wandrille Duchemin, Geert van Geest, Thuong Van Du Tran, Fotis E. Psomopoulos, & Monique Zahn. (2020, July 23). Introduction to Machine Learning (Version v1.0.0). Zenodo. http://doi.org/10.5281/zenodo.3958880
