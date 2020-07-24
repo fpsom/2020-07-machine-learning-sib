@@ -106,9 +106,13 @@ _Maximum participants_: 30
 | 15:30 - 16:00 | **Regression** (_practical_) (cont'd) |
 | 16:00 - 16:30 | _Closing questions, Discussion_ |
 
+## Exam
+
+
+
 ## Other examples
 
-If you finish all the exercices and wish to practice on more examples, here are a couple of good examples to help you get more familiar with the different ML techniques and packages.
+If you finish all the exercises and wish to practice on more examples, here are a couple of good examples to help you get more familiar with the different ML techniques and packages.
 1. [RNASeq Analysis in R](https://combine-australia.github.io/RNAseq-R/06-rnaseq-day1.html)
 2. [Use the Iris R built-in data set](https://github.com/fpsom/CODATA-RDA-Advanced-Bioinformatics-2019/blob/master/3.Day3.md)to run clustering and also some supervised classification and compare results obtained by different methods.
 
@@ -139,7 +143,7 @@ Relevant literature includes:
 
 **Coordination**: Monique Zahn
 
-We will recommend 0.50 ECTS credits for this course (given a passed exam at the end of the course).
+We will recommend 0.50 ECTS credits for this course (given a passed exam at the end of the course). The exam description is available [here](exam/README.md) - and is due for August 7th.
 
 You are welcome to register to the SIB courses mailing list to be informed of all future courses and workshops, as well as all important deadlines using the form [here](https://lists.sib.swiss/mailman/listinfo/courses).
 
