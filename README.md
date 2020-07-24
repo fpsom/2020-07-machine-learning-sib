@@ -108,7 +108,7 @@ _Maximum participants_: 30
 
 ## Exam
 
-
+The [exam](exam/README.md) offers you the possibility of applying what you learned during this course on a health-related data-set.
 
 ## Other examples
 
